@@ -18,28 +18,32 @@ To get started with F1-Bot, follow these steps:
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/F1-Bot.git
+git clone https://github.com/dakshj0shi/F1-Bot.git
 cd F1-Bot
 ```
 
 ### Install the required dependencies:
 
-Ensure you have Python and pip installed. Then, install the necessary packages:
+Ensure you have linux installed. Then, install the necessary packages:
 
 ```bash
-pip install -r requirements.txt
+curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash
 ```
 
 ### Configure the Bot:
 
 Update the `config.json` file with the necessary API keys and configuration settings for live race data. You can obtain these keys from a Formula 1 data provider.
+```bash
+gaianet init --config https://raw.githubusercontent.com/harishkotra/Gaia-8G/refs/heads/main/config_8g.json
+```
+
 
 ### Start the Bot:
 
 Run the following command to start the bot:
 
 ```bash
-python bot.py
+gaianet start
 ```
 
 ## How to Use
